@@ -1,0 +1,146 @@
+* {
+   box-sizing: border-box;
+   color: #fff;
+}
+body {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+#pseudo{
+color: thistle;
+background: transparent;
+}
+body img {
+   height: auto;
+   width: 100vw;
+   max-width: 400px;
+}
+@import url('https://rsms.me/inter/inter-ui.css');
+body {
+  align-items: center;
+  display: flex;
+  font-family: 'Inter UI', sans-serif;
+  font-size: 14px;
+  height: 100vh;
+  justify-content: center;
+  margin: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 320px;
+}
+.placeholder {
+  transform-origin: 0 50%;
+  transform: translateX(10px);
+}
+.placeholder.expand {
+  animation: MovePlaceholder 220ms both linear;
+}
+.placeholder.return {
+  animation: ReturnPlaceholder 220ms both linear;
+}
+#pseudo,#id_submit_pseudo{
+  background: transparent;
+  border: 0;
+  font-size: 20px;
+  height: 30px;
+  outline: none !important;
+  position: absolute;
+  top: -12px;
+} 
+#id_submit_pseudo{
+    
+    position: relative
+}
+svg {
+  position: relative;
+  top: -25px;
+}
+@keyframes MovePlaceholder {
+  0% { transform: translateX(10px) translateY(0) rotate(0) }
+  60% { transform: translateX(4px) translateY(-8px) rotate(-18deg) scale(0.92) }
+  100% { transform: translateX(0) translateY(-30px) rotate(0deg) scale(0.75) }
+}
+@keyframes ReturnPlaceholder {
+  0% { transform: translateX(0) translateY(-30px) scale(0.75) }
+  100% { transform: translateX(10px) translateY(0) }
+}
+*{
+    font-family: 'PT Sans', sans-serif;
+    margin:0;
+    padding:0;
+}
+
+body, html {
+    height: 100%;
+}
+
+main{
+    max-width:1280px;
+    min-height:100%;
+    margin:0 auto;
+    position:relative;
+}
+
+body {
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    height: 100vh;
+}
+
+.information, .preview, .footer {
+    text-align: center;
+}
+
+.preview {
+    position: relative;
+}
+
+.dislike {
+    position: absolute;
+    left: 25rem;
+    top: 4rem;
+}
+
+.dislike, .like, .done {
+  color: black;
+}
+
+.like {
+    position: absolute;
+    right: 27rem;
+    top: 4rem;
+}
+
+.img_pp {
+    height: 150px;
+    width: 150px;
+}
+
+.footer{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    padding-top:50px;
+    height:50px;
+}
+
+.title {
+    padding: 1rem;
+}
+
+.nat-select {
+  background-color: transparent;
+  border-color: black;
+}
+.gender-select {
+  background-color: transparent;
+  border-color: black;
+}
